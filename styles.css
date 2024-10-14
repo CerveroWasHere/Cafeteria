@@ -1,5 +1,5 @@
 :root {
-    --main-color: #85007a;
+    --main-color: #ac21e6;
     --black: #13131a;
     --bg: #010103;
     --border: 0.1rem solid rgba(255, 255, 255, 0.3);
@@ -260,4 +260,4 @@ footer .share img {
     background-color: var(--main-color);
     width: 38px;
     height: 38px;
-} 
+}

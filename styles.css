@@ -121,7 +121,7 @@ header {
 }
 
 .content span {
-    color: #0029f4;
+    color: #ac21e6;
 }
 
 .about span {
@@ -204,10 +204,12 @@ header {
 
 .menu .box-container .box:hover {
     background-color: #fff;
+    
 }
 
 .menu .box-container .box:hover > * {
     color: var(--black);
+    
 }
 
 .review .box-container .box {
@@ -251,7 +253,7 @@ header {
 }
 
 footer .share img {
-    margin: auto0.3rem;
+    margin: 0.3rem;
     cursor: pointer;
     border-radius: 50%;
     padding: 1rem;

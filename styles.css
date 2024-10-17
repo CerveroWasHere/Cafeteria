@@ -14,7 +14,7 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: 0.2s linear;
-    font-family: "Roboto", sans-serif;
+    font-family: "Afacad Flux", sans-serif;
 }
 
 body {
@@ -252,7 +252,7 @@ header {
     padding: 1rem 0;
 }
 
-footer .share img {
+.footer .share img {
     margin: 0.3rem;
     cursor: pointer;
     border-radius: 50%;

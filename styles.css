@@ -1,171 +1,266 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+:root {
+    --main-color: #ac21e6;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./img/cafezinho.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
-    <title>Caffeine Dreams</title>
-</head>
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Afacad Flux", sans-serif;
+}
 
-<body>
-    <header class="header">
-        <section>
-            <a href="#" class="logo">
-                <img src="./img/cafezinho2.png" alt="logo" width="100" height="100">
-            </a>
+body {
+    background-color: var(--bg);
+}
 
-            <nav class="navbar">
-                <a href="#">HOME</a>
-                <a href="#about">SOBRE</a>
-                <a href="#menu">MENU</a>
-                <a href="#review">AVALIAÇÕES</a>
-                <a href="#address">ENDEREÇO</a>
-            </nav>
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
 
-            <div class="icons">
-                <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/ffffff/search--v1.png" alt="search--v1"/>
-                <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/shopping-cart--v1.png" alt="shopping-cart--v1"/>
-            </div>
-        </section>
-    </header>
+
+header {
+    padding: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: var(--bg);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
+.home-container {
+    background: url("./img/fundo.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    max-width: 60rem;
+}
+
+.content h3 {
+    color: #fff;
+    font-size: 6rem;
+}
+
+.content p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.tittle {
+    font-size: 5rem;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.content span {
+    color: #ac21e6;
+}
+
+.about span {
+    columns: #fff;
+    text-transform: uppercase;
+}
+
+.menu span {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.review span {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.address span {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 1.5rem;
+}
+
+.about .row .content {
+    padding: 2rem;
+}
+
+.about .row .content {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .row .content p {
+    padding: 1.6rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    cursor: pointer;
+}
+
+.menu .box-container .box img {
+    height: 10rem;
+}
+
+.menu .box-container .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-container .box span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover {
+    background-color: #fff;
     
-    <div class="home-container">
-        <section id="#home">
-            <div class="content">
-                <h3><span>CAFFEINE DREAMS:💭</span>ONDE CADA GOLE É UM SONHO...</h3>
-                <p>Uma cafeteria 5 estrelas que oferece uma experiência única para os amantes de café. Com um ambiente acolhedor e elegante, a casa serve uma seleção de cafés de alta qualidade, preparados por baristas talentosos. Perfeito para qualquer momento do dia, o café promete proporcionar experiências memoráveis e um atendimento excepcional.</p>
-                <a href="#" class="btn">COMPRE O SEU AGORA!</a>
-            </div>
-        </section>
-    </div>
+}
 
-    <section class="about" id="about">
-        <h2 class="tittle">Sobre <span>Nós</span></h2>
-        <div class="row">
-            <div class="container-image">
-                <img src="./img/about-img.jpg" alt="sobre-nós">
-            </div>
-            <div class="content">
-                <h3>O Que Faz Nosso Café Especial</h3>
-                <p> nosso café é especial devido à seleção cuidadosa de grãos de origem sustentável e ao talento dos nossos baristas, que dominam a arte da preparação. Oferecemos receitas exclusivas que combinam sabores tradicionais e inovadores, criando uma experiência única em cada xícara.</p>
-                <p>Além disso, a atmosfera acolhedora e o atendimento personalizado fazem com que cada cliente se sinta parte da nossa família. Aqui, o café é mais do que uma bebida; é uma experiência memorável!</p>
-                <a href="#" class="btn">Saiba Mais</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="menu" id="menu">
-        <h2 class="tittle">Nosso <span>Menu</span></h2>
-
-        <div class="box-container">
-            <div class="box">
-                <img src="./img/cafe-coado.png" alt="item-1">
-                <h3>Café coado</h3>
-                <div class="price">R$ 03,50 <span>R$05,00</span></div>
-                <a href="#" class="btn">Adicione ao Carrinho</a>
-            </div>
-            <div class="box">
-                <img src="./img/espresso.png" alt="item-2">
-                <h3>Espresso</h3>
-                <div class="price">R$ 06,50 <span> R$ 10,00</span></div>
-                <a href="#" class="btn">Adicione ao Carrinho</a>
-            </div>
-            <div class="box">
-                <img src="./img/cappucino.png" alt="item-3">
-                <h3>Cappuccino</h3>
-                <div class="price">R$ 12,00 <span> R$ 15,50</span></div>
-                <a href="#" class="btn">Adicione ao Carrinho</a>
-            </div>
-            <div class="box">
-                <img src="./img/latte.png" alt="item-4">
-                <h3>Latte</h3>
-                <div class="price">R$ 14,99 <span> R$ 16,99</span></div>
-                <a href="#" class="btn">Adicione ao Carrinho</a>
-            </div>
-            <div class="box">
-                <img src="./img/mocha-frapuccino.png" alt="item-5">
-                <h3>Mocha Frappuccino</h3>
-                <div class="price">R$ 10,50 <span> R$ 12,99</span></div>
-                <a href="#" class="btn">Adicione ao Carrinho</a>
-            </div>
-            <div class="box">
-                <img src="./img/ristretto.png" alt="item-6">
-                <h3>Ristretto</h3>
-                <div class="price">R$ 17,50 <span> R$ 20,00</span></div>
-                <a href="#" class="btn">Adicione ao Carrinho</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="review" id="review">
-        <h2 class="tittle">Nossos <span>Clientes</span></h2>
-
-        <div class="box-container">
-
-            <div class="box">
-                <img width="90" height="90" src="./img/aspas.png" alt="comentário">
-                <p> O café estava na temperatura ideal e os grãos eram de qualidade, além do Wi-Fi ser razoavelmente rápido. No entanto, preciso tirar uma estrela pela organização das mesas, que aumentava as chances de interações sociais desnecessárias, e pela falta de opções alternativas de leite, como soja ou amêndoa. No geral, uma experiência agradável, com algumas melhorias que poderiam torná-la excelente. Certamente voltarei para uma nova análise!</p>
-                <img src="./img/sheldon.jpg" alt="foto-cliente" class="user">
-                <h3>Sheldon Cooper</h3>
-                <div class="stars">
-                    <img width="30" height="30" src="./img/estrela.png">
-                    <img width="30" height="30" src="./img/estrela.png">
-                    <img width="30" height="30" src="./img/estrela.png">
-                    <img width="30" height="30" src="./img/estrela.png">
-                    <img width="30" height="30" src="./img/estrela2.png">
-                </div>
-            </div>
-           
-            <div class="box">
-                <img width="90" height="90" src="./img/aspas.png" alt="comentário">
-                <p> Essa cafeteria não é um buraco negro de tédio, o que já é um bom sinal. O ambiente é legal e as cadeiras são confortáveis o suficiente para horas de reflexão sobre a insignificância do universo. Os baristas são competentes, mas poderia ter mais tecnologia. No geral, uma boa parada para uma dose de cafeína antes de mais uma viagem interdimensional. Voltarei, desde que não me tragam de volta à Terra sem um bom motivo.</p>
-                <img src="./img/rick.jpg" alt="foto-cliente" class="user">
-                <h3>Rick Sanchez</h3>
-                <div class="stars">
-                    <img width="30" height="30" src="./img/estrela.png">
-                    <img width="30" height="30" src="./img/estrela.png">
-                    <img width="30" height="30" src="./img/estrela.png">
-                    <img width="30" height="30" src="./img/estrela.png">
-                    <img width="30" height="30" src="./img/estrela2.png">
-                </div>
-            </div>
-
-            <div class="box">
-                <img width="90" height="90" src="./img/aspas.png" alt="comentário">
-                <p> Mamma mia! Esta cafeteria é espetacular! O café é forte e encorpado, perfeito para me dar energia antes das aventuras. O ambiente é acolhedor e o atendimento é fantástico, tão simpático quanto os Toads. Se você ama um bom café, este é o lugar certo! Vou voltar sempre que precisar de um empurrãozinho para enfrentar o Bowser! Grazie mille!</p>
-                <img src="./img/mario.png" alt="foto-cliente" class="user">
-                <h3>Mario</h3>
-                <div class="stars">
-                    <img width="30" height="30" src="./img/estrela.png">
-                    <img width="30" height="30" src="./img/estrela.png">
-                    <img width="30" height="30" src="./img/estrela.png">
-                    <img width="30" height="30" src="./img/estrela.png">
-                    <img width="30" height="30" src="./img/estrela.png">
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="address" id="address">
-        <h2 class="tittle">Nosso <span>Endereço</span></h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12551.62047580377!2d13.223271613874699!3d-8.809036249712591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f258533cdcc1%3A0x2aa64df5c193009e!2sFortaleza%20de%20S%C3%A3o%20Miguel!5e0!3m2!1spt-BR!2sbr!4v1728573813056!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
-    <section class="footer">
-        <div class="share">
-
-            <img width="35" height="35" src="./img/face.png">
-            <img width="35" height="35" src="./img/insta.png">
-            <a href="https://wa.me/message/RLRG5Q5IZZGCK1"><img width="35" height="35" src="./img/whats.png"></a>
-
-        </div>
-    </section>
+.menu .box-container .box:hover > * {
+    color: var(--black);
     
-</body>
-</html>
+}
+
+.review .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.review .box-container p {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+}
+
+.review .box-container h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.review .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .share {
+    padding: 1rem 0;
+}
+
+.footer .share img {
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.footer .share img:hover {
+    background-color: var(--main-color);
+    width: 38px;
+    height: 38px;
+}

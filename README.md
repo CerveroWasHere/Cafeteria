@@ -2,7 +2,7 @@ O objetivo deste projeto é apenas criar uma página principal para uma cafeteri
 
 O que deverá ter:
 
--Cabeçalho
+- Cabeçalho
 
 - Parte falando um pouco sobre a cafeteria.
 

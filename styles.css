@@ -260,8 +260,3 @@ header {
     padding: 1rem;
 }
 
-.footer .share img:hover {
-    background-color: var(--main-color);
-    width: 38px;
-    height: 38px;
-}

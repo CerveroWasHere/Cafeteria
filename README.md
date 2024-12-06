@@ -18,4 +18,4 @@ Cronograma:
 
 Até dia 01/12/2024 finalizar: Cabeçalho, parte falando sobre a cafeteria, menu, comentários, Endereço e Redes sociais.
 
-Até dia 02/12/2024 Adicionar todas as fotos e imagens.
+Até dia 06/12/2024 Adicionar todas as fotos e imagens.
